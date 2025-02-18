@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 0</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: rgb(15, 16, 20);
+      }
+
+      .sub-btn {
+        cursor: pointer;
+        width: 80rem;
+        height: 10rem;
+        font-size: 5rem;
+        border: none;
+        transition: opacity 0.2s ease-in-out;
+        border-radius: 5rem;
+        background-color: white;
+      }
+
+      .sub-btn:hover {
+        opacity: 0.9;
+      }
+
+      .btn-on {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="sub-btn js-sub">Subscribe</button>
+    <script>
+      const subBtn = document.querySelector(".js-sub");
+
+      subBtn.addEventListener("click", () => {
+        if (subBtn.innerHTML === "Subscribe") {
+          subBtn.innerHTML = "Subscribed";
+          subBtn.classList.add("btn-on");
+        } else {
+          subBtn.innerHTML = "Subscribe";
+          subBtn.classList.remove("btn-on");
+        }
+      });
+    </script>
+  </body>
+</html>

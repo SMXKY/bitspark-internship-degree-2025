@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+    <style>
+      body {
+        padding: 8rem;
+      }
+      /*explain element name selector even more*/
+      button {
+        /* explain text colors vs rgb vs hex e.g blue vs rgb(0,114,240) vs #0072F0*/
+        background-color: rgb(0, 114, 240);
+        /* explain color vs background color*/
+        color: white;
+        border: none;
+        /*explain REM vs PX*/
+        height: 50px;
+        width: 120px;
+        font-size: 15px;
+        /* explain what chaning the cursor type does*/
+        cursor: pointer;
+        /* explain how margin works*/
+        margin-right: 40px;
+      }
+
+      .follow-btn {
+        /* no need to style the follow btn again */
+      }
+
+      .join-btn {
+        color: rgb(0, 114, 240);
+        background-color: white;
+        /*explain border styles*/
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+      }
+
+      .click-btn {
+        border-radius: 25px;
+        width: 150px;
+      }
+
+      #submit-btn {
+        background-color: rgb(206, 206, 206);
+        color: rgb(0, 114, 240);
+        cursor: not-allowed;
+      }
+
+      .default-state-holder {
+        display: flex;
+        margin-bottom: 2rem;
+      }
+
+      .lab {
+        margin-right: 2rem;
+        font-weight: 700;
+      }
+
+      .follow-hover {
+        opacity: 0.5;
+      }
+
+      .follow-active {
+        border-radius: 30px;
+      }
+
+      .join-hover {
+        background-color: rgb(0, 114, 240);
+        color: white;
+      }
+
+      .join-active {
+        border-color: red;
+        color: rgb(0, 114, 240);
+      }
+
+      .click-hover {
+        color: rgb(0, 114, 240);
+        background-color: white;
+        /*explain border styles*/
+        border-style: solid;
+        border-width: 2px;
+      }
+
+      .click-active {
+        color: rgb(0, 114, 240);
+        background-color: white;
+        border-radius: 0px;
+        border-style: solid;
+        border-width: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="default-state-holder">
+      <p class="lab">Default State:</p>
+      <div class="default-state">
+        <!-- sub type -->
+        <button class="follow-btn">Follow</button>
+        <!-- join type -->
+        <button class="join-btn">Join</button>
+        <!-- roundent type -->
+        <button class="click-btn">Click Me!</button>
+        <!-- mutted type -->
+      </div>
+    </div>
+
+    <div class="default-state-holder">
+      <p class="lab">Hover State:</p>
+      <div class="default-state">
+        <!-- sub type -->
+        <button class="follow-btn follow-hover">Follow</button>
+        <!-- join type -->
+        <button class="join-btn join-hover">Join</button>
+        <!-- roundent type -->
+        <button class="click-btn click-hover">Click Me!</button>
+      </div>
+    </div>
+
+    <div class="default-state-holder">
+      <p class="lab">Active State:</p>
+      <div class="default-state">
+        <!-- sub type -->
+        <button class="follow-btn follow-active">Follow</button>
+        <!-- join type -->
+        <button class="join-btn join-active">Join</button>
+        <!-- roundent type -->
+        <button class="click-btn click-active">Click Me!</button>
+        <!-- mutted type -->
+      </div>
+    </div>
+  </body>
+</html>
